@@ -1,6 +1,8 @@
-import { Text, Stack } from "@mantine/core";
+import {Text, Stack, Group} from "@mantine/core";
 import { ThemeProvider } from "./ThemeProvider";
 import { SelectFile} from "./SelectFile"
+import { SqlEditor} from "./SqlEditor"
+
 
 export default function App() {
     return (
@@ -11,6 +13,9 @@ export default function App() {
                 </Text>
                 <SelectFile></SelectFile>
             </Stack>
+            <Group mt={50}>
+                <SqlEditor></SqlEditor>
+            </Group>
         </ThemeProvider>
     );
 }
